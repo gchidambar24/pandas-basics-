@@ -14,3 +14,17 @@ print(b)
 
 c = int(input())
 print(b[b['rank']==c]['name'])
+
+Output:
+
+name  rank
+James  James     4
+Billy  Billy     1
+Bob      Bob     3
+Amy      Amy     5
+Tom      Tom     2
+Harry  Harry     6
+4
+James    James
+Name: name, dtype: object
+
