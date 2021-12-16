@@ -1,0 +1,16 @@
+excercise 1:
+You are given a DataFrame that includes the names and ranks of people.
+You need to take a rank as input and output the corresponding name column from the DataFrame as a Series.
+Note that the rank is an integer, so you need to convert the user input to an integer.
+
+import pandas as pd
+a = {
+   'name': ['James', 'Billy', 'Bob', 'Amy', 'Tom', 'Harry'],
+   'rank': [4, 1, 3, 5, 2, 6]
+}
+
+b = pd.DataFrame(a, index=a['name'])
+print(b)
+
+c = int(input())
+print(b[b['rank']==c]['name'])
